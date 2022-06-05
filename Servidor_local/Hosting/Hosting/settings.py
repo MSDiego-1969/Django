@@ -20,6 +20,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR= os.path.join(BASE_DIR,"template")
 # print(TEMPLATE_DIR)
 
+# Creamos la direccion STATIC_DIR para unir base con nuestra carpeta de imagenes. Desde aquí vamos abajo a  la línea STATIC_URL y escribimos nuestra línea
+STATIC_DIR = os.path.join(BASE_DIR,"static")
+# print(STATIC_DIR)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 # Configuraciones de desarrollo de inicio rápido: no aptas para producción
@@ -125,6 +128,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+# VENGO DE BASE_DIR 
+STATICFILES_DIRS = [STATIC_DIR,]
+print(STATICFILES_DIRS)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

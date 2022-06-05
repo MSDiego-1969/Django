@@ -21,5 +21,7 @@ urlpatterns = [
     path("",views.vista, name="vista"),
     path("miruta/", include("Host_proj.miruta")),
     path("miruta1/",views.vista2, name="vista2"),
+    path("miruta3/",views.vista3, name="vista3"),
+    path("miruta4/",views.vista4, name="vista4"),
     path('admin/', admin.site.urls),
     ]

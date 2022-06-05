@@ -52,8 +52,11 @@
 # y en el archivo views.py creamos la funcion de la segunda vista: def vista1(request):
     # diccionario = {"etiqueta":"Este es el valor de la etiqueta"}
     # return render(request,"pagina1.html",context= diccionario)
-
-
+ 
+# ****************************************************************************************************** 
+# Crear carpeta de imagenes 
+# Creamos la direccion STATIC_DIR para unir base con nuestra carpeta de imagenes
+# STATIC_DIR = os.path.join(BASE_DIR,"static")
 
 # conda deactivate 
 # conda env list muestra todos los entornos, primero desactivar el que tenemos
