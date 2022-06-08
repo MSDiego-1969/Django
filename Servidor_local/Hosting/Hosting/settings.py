@@ -13,18 +13,14 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 # from os import TEMPLATE
 import os
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 # Cree rutas dentro del proyecto de esta manera: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 # print(BASE_DIR)
 TEMPLATE_DIR= os.path.join(BASE_DIR,"template")
 # print(TEMPLATE_DIR)
-
 # Creamos la direccion STATIC_DIR para unir base con nuestra carpeta de imagenes. Desde aquí vamos abajo a  la línea STATIC_URL y escribimos nuestra línea
 STATIC_DIR = os.path.join(BASE_DIR,"static")
 # print(STATIC_DIR)
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 # Configuraciones de desarrollo de inicio rápido: no aptas para producción
 # Ver https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -81,7 +77,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Hosting.wsgi.application'
 
-# Database
+# Base de datos
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
@@ -91,7 +87,7 @@ DATABASES = {
     }
 }
 
-# Password validation
+# Validacion de clave
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -110,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
+# Internacionalización
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
@@ -124,7 +120,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+# Archivos estaticos (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
